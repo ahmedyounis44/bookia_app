@@ -1,4 +1,24 @@
 {
     "login": "تسجيل الدخول",
-    "home": "الرئيسية"
+    "home": "الرئيسية",
+    "register": "تسجيل",
+    "email": "البريد الإلكتروني",
+    "welcometitle": "اطلب كتابك الآن!",
+    "Logintitle": "مرحبًا بعودتك! سعيد لرؤيتك مرة أخرى!",
+    "registertitle": "مرحباً! سجل للبدء",
+    "hint_text_email": "أدخل بريدك الإلكتروني",
+    "hint_text_password": "أدخل كلمة المرور",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "login_with_google": "تسجيل الدخول باستخدام google",
+    "or": "أو",
+    "login_with_apple": "تسجيل الدخول باستخدام Apple",
+    "dont_have_account": "ليس لديك حساب؟",
+    "register_now": "سجل الان",
+    "login_now": "سجل الآن",
+    "title_register": "مرحبا! سجل للبدء",
+    "hint_text_user_name": "اسم المستخدم",
+    "hint_text_confirm_password": "تأكيد كلمة المرور",
+    "already_have_account": "لديك حساب بالفعل؟",
+    "hint_text_forgot_password": "نسيت كلمة المرور؟",
+    "back_to_login": "العودة إلى تسجيل الدخول"
 }
