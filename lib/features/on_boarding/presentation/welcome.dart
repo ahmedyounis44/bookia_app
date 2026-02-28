@@ -1,6 +1,8 @@
+import 'package:bookia_application/core/routs/app_routs.dart';
 import 'package:bookia_application/core/shared_widgets/app_button.dart';
 import 'package:bookia_application/core/theme/app_colors.dart';
 import 'package:bookia_application/core/theme/app_text_style.dart';
+import 'package:bookia_application/core/utils/extenstions.dart';
 import 'package:bookia_application/features/auth/presentation/login.dart';
 import 'package:bookia_application/features/auth/presentation/register.dart';
 import 'package:bookia_application/generated/locale_keys.g.dart';
@@ -54,10 +56,7 @@ class Welcome extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 22.w),
                 child: AppButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Login()),
-                    );
+                     context.pushNamed(AppRoutes.login);
                   },
                   color: AppColors.primaryColor,
                   title: LocaleKeys.login.tr(),
@@ -71,13 +70,7 @@ class Welcome extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 22.w),
                 child: AppButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        // ignore: inference_failure_on_instance_creation
-                        MaterialPageRoute(
-                          builder: (context) => const Register(),
-                        ),
-                      );
+                    context.pushNamed(AppRoutes.register);
                   },
                   color: AppColors.secondaryColor,
                   title: LocaleKeys.register.tr(),
