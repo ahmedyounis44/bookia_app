@@ -1,7 +1,6 @@
 
 import 'package:bookia_application/core/routs/app_routers.dart';
 import 'package:bookia_application/core/routs/app_routs.dart';
-import 'package:bookia_application/features/on_boarding/presentation/welcome.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

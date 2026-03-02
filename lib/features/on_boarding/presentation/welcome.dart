@@ -3,8 +3,6 @@ import 'package:bookia_application/core/shared_widgets/app_button.dart';
 import 'package:bookia_application/core/theme/app_colors.dart';
 import 'package:bookia_application/core/theme/app_text_style.dart';
 import 'package:bookia_application/core/utils/extenstions.dart';
-import 'package:bookia_application/features/auth/presentation/login.dart';
-import 'package:bookia_application/features/auth/presentation/register.dart';
 import 'package:bookia_application/generated/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';

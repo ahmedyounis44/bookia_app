@@ -1,8 +1,10 @@
+import 'package:bookia_application/core/routs/app_routs.dart';
 import 'package:bookia_application/core/services/validator_service.dart';
 import 'package:bookia_application/core/shared_widgets/app_button.dart';
 import 'package:bookia_application/core/shared_widgets/app_textform_filed.dart';
 import 'package:bookia_application/core/theme/app_colors.dart';
 import 'package:bookia_application/core/theme/app_text_style.dart';
+import 'package:bookia_application/core/utils/extenstions.dart';
 import 'package:bookia_application/features/auth/cubit/auth_cubit.dart';
 import 'package:bookia_application/features/home/presentation/home.dart';
 import 'package:bookia_application/generated/locale_keys.g.dart';
@@ -81,9 +83,10 @@ class _LoginScreenState extends State<Login> {
                 BlocListener<AuthCubit, AuthState>(
                  listener: (context, state) {
                     if (state is AuthSucessState) {
-                      Navigator.of(context).pushReplacement(
+                       context.pushReplacementNamed(AppRoutes.home);
+                      /*Navigator.of(context).pushReplacement(
                         MaterialPageRoute(builder: (context) => Home()),
-                      );
+                      );*/
                     } else if (state is AuthErrorState) {
                       showDialog(
                         context: context,
