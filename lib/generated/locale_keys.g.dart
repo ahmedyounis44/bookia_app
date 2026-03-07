@@ -25,5 +25,8 @@ abstract class  LocaleKeys {
   static const already_have_account = 'already_have_account';
   static const hint_text_forgot_password = 'hint_text_forgot_password';
   static const back_to_login = 'back_to_login';
+  static const home_best_seller = 'home_best_seller';
+  static const buy = 'buy';
+  static const loading = 'loading';
 
 }

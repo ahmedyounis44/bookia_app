@@ -20,5 +20,8 @@
     "hint_text_confirm_password": "تأكيد كلمة المرور",
     "already_have_account": "لديك حساب بالفعل؟",
     "hint_text_forgot_password": "نسيت كلمة المرور؟",
-    "back_to_login": "العودة إلى تسجيل الدخول"
+    "back_to_login": "العودة إلى تسجيل الدخول",
+    "home_best_seller": "الأكثر مبيعاً",
+    "buy": "شراء",
+    "loading": "جاري التحميل..."
 }

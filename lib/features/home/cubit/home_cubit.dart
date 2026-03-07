@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
+import 'package:bookia_application/features/home/data/models/best_seller_model.dart';
 import 'package:bookia_application/features/home/data/models/home_slider_model.dart';
-import 'package:bookia_application/features/home/data/repo/home_slider_repo.dart';
+import 'package:bookia_application/features/home/data/repo/home_repo.dart';
 import 'package:meta/meta.dart';
 
 part 'home_state.dart';
@@ -11,11 +12,21 @@ class HomeCubit extends Cubit<HomeState> {
  
   getHomeSliders() async {
     emit(GethomeSliderLoading());
-    final response = await HomeSliderRepo.gethomeSliders();
+    final response = await HomeRepo.gethomeSliders();
     if (response is SliderModel) {
       emit(GethomeSliderSucess(response.data?.sliders ?? []));
     } else {
       emit(GethomeSliderError());
+    }
+  }
+
+   Future<void> getBestSellers() async {
+    emit(GetBestSellerLoading());
+    final response = await HomeRepo.getBestSellers();
+    if (response is BestSellerModel) {
+      emit(GetBestSellerSuccess((response.data?.products ?? [])));
+    } else {
+      emit(GetBestSellerError());
     }
   }
 }

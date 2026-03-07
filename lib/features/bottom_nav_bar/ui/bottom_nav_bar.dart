@@ -1,6 +1,6 @@
 import 'package:bookia_application/core/theme/app_colors.dart';
 import 'package:bookia_application/features/home/cubit/home_cubit.dart';
-import 'package:bookia_application/features/home/presentation/home.dart';
+import 'package:bookia_application/features/home/presentation/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -16,8 +16,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int _currentIndex = 0;
   final List<Widget> _screens = [
     BlocProvider(
-      create: (context) => HomeCubit()..getHomeSliders(),
-      child: const Home(),
+       create: (context) => HomeCubit()
+        ..getHomeSliders()
+        ..getBestSellers(),
+      child: const HomeScreen(),
     ),
     //const BookMarkScreen(),
    // const CartScreen(),
@@ -52,7 +54,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset("assets/icons/Shop.svg"),
+            icon: SvgPicture.asset("assets/icons/shop.svg"),
             label: '',
           ),
           BottomNavigationBarItem(
