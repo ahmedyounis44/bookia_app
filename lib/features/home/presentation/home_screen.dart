@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) => SingleChildScrollView(
+  Widget build(BuildContext context) =>  SingleChildScrollView(
     padding: EdgeInsets.symmetric(horizontal: 13.w, vertical: 10.h),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
